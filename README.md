@@ -14,9 +14,10 @@ Wrapper for the CountOnce API
 	```
 	$ python setup.py install
 	```
+
 2. With pip
 ```
-$ pip install countonce_python
+$ pip install countonce
 ```
 
 ## Usage
