@@ -1,0 +1,8 @@
+countonce/__pycache__
+dist
+build
+Eel.egg-info
+.tmp
+.DS_Store
+*.pyc
+*.swp
