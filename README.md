@@ -34,9 +34,9 @@ async def main():
 	# use the client in a blocking/sync way
 	attributes = {'account_id': 200000, 'actions': 'python'}
 	response = await co_client.ping({
-    	'key': 'account_actions',
-    	'attributes': attributes,
-    	'unique_value': 'test'
+		'key': 'account_actions',
+		'attributes': attributes,
+		'unique_value': 'test'
 	})
 	print(response.json)
 
