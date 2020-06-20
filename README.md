@@ -20,6 +20,7 @@ $ pip install countonce_python
 ```
 
 ## Usage
+### Example 1
 ```python
 from countonce import CountOnce
 import asyncio
@@ -60,4 +61,25 @@ async def main():
 if __name__ == '__main__':
 	asyncio.run(main())
 
+```
+### Example 2
+```python 
+from countonce import CountOnce
+from os import environ
+import asyncio
+
+# initialize the client with your account id and auth token
+co_client = CountOnce(
+    account_id = '<your account id>',
+    auth_token = '<your auth token>'
+)
+
+# calling the async functions from non-async code
+attributes = {'account_id': 200000, 'actions': 'python'}
+response = asyncio.run(co_client.ping({
+	'key': 'account_actions',
+	'attributes': attributes,
+	'unique_value': 'test'
+}))
+print(response.json)
 ```
