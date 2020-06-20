@@ -66,7 +66,6 @@ if __name__ == '__main__':
 ### Example 2
 ```python 
 from countonce import CountOnce
-from os import environ
 import asyncio
 
 # initialize the client with your account id and auth token
