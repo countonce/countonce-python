@@ -11,7 +11,7 @@ setup(
     url='https://github.com/countonce/countonce-python',
     packages=['countonce'],
     install_requires=['requests'],
-    python_requires='>=3.5',
+    python_requires='>=3.7',
     description='Wrapper for the countonce API',
     long_description=long_description,
     long_description_content_type='text/markdown',
